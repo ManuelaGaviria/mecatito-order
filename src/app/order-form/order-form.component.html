@@ -1,0 +1,27 @@
+<div class="container">
+    <h2>MECATICO COMPANY - Orden de Compra</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div>
+        <label for="id">Cédula/NIT:</label>
+        <input id="id" name="id" [(ngModel)]="order.id" required>
+      </div>
+      <div>
+        <label for="phone">Teléfono:</label>
+        <input id="phone" name="phone" [(ngModel)]="order.phone" required>
+      </div>
+      <div>
+        <label for="product1">Producto 1:</label>
+        <input id="product1" name="product1" [(ngModel)]="order.product1" required>
+      </div>
+      <div>
+        <label for="product2">Producto 2:</label>
+        <input id="product2" name="product2" [(ngModel)]="order.product2" required>
+      </div>
+      <div>
+        <label for="product3">Producto 3:</label>
+        <input id="product3" name="product3" [(ngModel)]="order.product3" required>
+      </div>
+      <button type="submit">Generar PDF</button>
+    </form>
+  </div>
+  
